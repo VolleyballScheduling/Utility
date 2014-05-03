@@ -1,5 +1,5 @@
 {
-    "name": "VolleyballScheduling/utility",
+    "name": "volleyball/utility",
     "type": "library",
     "description": "utility and minor core features of the volleyball system.",
     "keywords": [
@@ -21,17 +21,17 @@
         "php": ">=5.4"
     },
     "require-dev": {
-//        "phpspec/phpspec": "2.0.*@dev"
+
     },
     "autoload": {
         "psr-4": {
-            "Volleyball\\Component\\Utility\\": "",
-//            "Volleyball\\Component\\Utility\\spec": "spec/"
+            "Volleyball\\Component\\Utility\\": ""
+
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.*@dev"
+            "dev-master": "0.1.*-dev"
         }
     }
 }
