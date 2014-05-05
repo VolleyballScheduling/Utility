@@ -1,7 +1,7 @@
 <?php
 namespace Volleyball\Component\Utility\Interfaces;
 
-class ObjectInterface
+interface ObjectInterface
 {
     /**
      * Get Name

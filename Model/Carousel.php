@@ -1,9 +1,7 @@
 <?php
-namespace Volleyball\Component\Model;
+namespace Volleyball\Component\Utility\Model;
 
-use Volleyball\Component\Utility\Interfaces\CarouselInterface;
-
-class Carousel implements CarouselInterface
+class Carousel
 {
     /**
      * Name
@@ -42,7 +40,9 @@ class Carousel implements CarouselInterface
     }
     
     /**
-     * {@inheritdoc}
+     * Get items
+     *
+     * @return ArrayCollection
      */
     public function getItems()
     {
@@ -50,7 +50,11 @@ class Carousel implements CarouselInterface
     }
     
     /**
-     * {@inheritdoc}
+     * Set items
+     *
+     * @param array $items items
+     *
+     * @return self
      */
     public function setItems(array $items)
     {
@@ -60,15 +64,23 @@ class Carousel implements CarouselInterface
     }
     
     /**
-     * {@inheritdoc}
+     * Get a item
+     *
+     * @param CarouselItem|String $item item
+     *
+     * @return CarouselItem
      */
     public function getItem($item)
     {
         return (isset($this->items[$item]) ? $this->items[$item] : false);
     }
-    
+
     /**
-     * {@inheritdoc}
+     * Add a item
+     *
+     * @param CarouselItem $item item
+     *
+     * @return self
      */
     public function addItem(CarouselItem $item)
     {

@@ -3,10 +3,11 @@ namespace Volleyball\Component\Utility\Repository;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\Repository\RepositoryFactory as BaseRepositoryFactory;
 
-use Volleyball\UtilityBundle\Doctrine\ORM\EntityRepository;
+use Volleyball\Bundle\UtilityBundle\Doctrine\ORM\EntityRepository;
 
-class RepositoryFactory extends EntityRepository
+class RepositoryFactory extends EntityRepository implements BaseRepositoryFactory
 {
     /**
      * Id
@@ -32,7 +33,7 @@ class RepositoryFactory extends EntityRepository
      * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
      * @param \Volleyball\UtilityBundle\Repository\RepositoryFactory $default
      */
-    public function __construct(array $ids, ContainerInterface $container, RepositoryFactory $default)
+    public function __construct(array $ids, ContainerInterface $container, BaseRepositoryFactory $default)
     {
         $this->ids = $ids;
         $this->container = $container;

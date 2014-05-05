@@ -1,5 +1,5 @@
 <?php
-namespace Volleyball\Component\Model;
+namespace Volleyball\Component\Utility\Model;
 
 use Volleyball\Component\Utility\Interfaces\ObjectInterface;
 

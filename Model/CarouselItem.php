@@ -1,9 +1,7 @@
 <?php
 namespace Volleyball\Component\Utility\Model;
 
-use Volleyball\Component\Utiltiy\Interfaces\CarouselItemInterface;
-
-class CarouselItem implements CarouselItemInterface
+class CarouselItem
 {
     /**
      * Name

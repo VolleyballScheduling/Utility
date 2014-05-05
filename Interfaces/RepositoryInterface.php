@@ -1,9 +1,7 @@
 <?php
 namespace Volleyball\Component\Utility\Interfaces;
 
-use Volleyball\Component\Utility\Interfaces\CarouselInterface;
-
-interface CarouselBuilderInterface
+interface RepositoryInterface
 {
     /**
      * Start creating the carousel with specified name.
