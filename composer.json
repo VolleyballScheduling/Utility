@@ -1,0 +1,37 @@
+{
+    "name": "volleyball/utility",
+    "type": "library",
+    "description": "utility and minor core features of the volleyball system.",
+    "keywords": [
+        "scheduling",
+        "scheduling system",
+        "utility",
+        "carousel",
+        "address"
+    ],
+    "homepage": "http://volleyball.daviddurost.net",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "David Durost",
+        "homepage": "http://daviddurost.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Volleyball\\Component\\Utility\\": ""
+
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.*-dev"
+        }
+    }
+}
