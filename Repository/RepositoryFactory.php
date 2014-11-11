@@ -3,11 +3,19 @@ namespace Volleyball\Component\Utility\Repository;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
+<<<<<<< HEAD
 use Doctrine\ORM\Repository\RepositoryFactory as RepositoryFactoryInterface;
 
 use Volleyball\Bundle\UtilityBundle\Doctrine\ORM\EntityRepository;
 
 class RepositoryFactory extends EntityRepository implements RepositoryFactoryInterface
+=======
+use Doctrine\ORM\Repository\RepositoryFactory as BaseRepositoryFactory;
+
+use Volleyball\Bundle\UtilityBundle\Doctrine\ORM\EntityRepository;
+
+class RepositoryFactory extends EntityRepository implements BaseRepositoryFactory
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
 {
     /**
      * Id
@@ -33,12 +41,19 @@ class RepositoryFactory extends EntityRepository implements RepositoryFactoryInt
      * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
      * @param \Volleyball\UtilityBundle\Repository\RepositoryFactory $default
      */
+<<<<<<< HEAD
     public function __construct(array $ids, ContainerInterface $container, RepositoryFactory $default)
+=======
+    public function __construct(array $ids, ContainerInterface $container, BaseRepositoryFactory $default)
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
     {
         $this->ids = $ids;
         $this->container = $container;
         $this->default = $default;
+<<<<<<< HEAD
         parent::construct();
+=======
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
     }
 
     /**

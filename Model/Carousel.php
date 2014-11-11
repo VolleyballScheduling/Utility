@@ -40,7 +40,13 @@ class Carousel
     }
     
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * Get items
+     *
+     * @return ArrayCollection
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
      */
     public function getItems()
     {
@@ -48,7 +54,15 @@ class Carousel
     }
     
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * Set items
+     *
+     * @param array $items items
+     *
+     * @return self
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
      */
     public function setItems(array $items)
     {
@@ -58,15 +72,33 @@ class Carousel
     }
     
     /**
+<<<<<<< HEAD
      * {@inheritdoc}
+=======
+     * Get a item
+     *
+     * @param CarouselItem|String $item item
+     *
+     * @return CarouselItem
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
      */
     public function getItem($item)
     {
         return (isset($this->items[$item]) ? $this->items[$item] : false);
     }
+<<<<<<< HEAD
     
     /**
      * {@inheritdoc}
+=======
+
+    /**
+     * Add a item
+     *
+     * @param CarouselItem $item item
+     *
+     * @return self
+>>>>>>> a97cd5629e0f96f64c81b3bee8ecafe9cbc9d823
      */
     public function addItem(CarouselItem $item)
     {
